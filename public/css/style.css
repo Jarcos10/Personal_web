@@ -141,8 +141,8 @@ span{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 600px; 
-    height: 400px; 
+    width: 450px; 
+    height: 450px; 
 }
 
 .home-img img {
@@ -244,7 +244,7 @@ span{
 }
 
 .text-animation span::before{
-    content: "Web Developer";
+    content: "Estudiante";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -272,23 +272,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Fronted Designer";
+        content: "Desarrollador Móvil Jr";
     }
     21%,
     40%{
-        content: "Web designer";
+        content: "Desarrollador Backend Jr";
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "Desarrollador Móvil Jr";
     }
     61%,
     80%{
-        content: "Web Developer";
+        content: "Desarrollador Backend Jr";
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Desarrollador Móvil Jr";
     }
 }
 
@@ -458,7 +458,7 @@ span{
 
 .service-box {
     background-color: var(--main-color);
-    height: 250px;
+    height: 230px;
     border-radius: 2rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -595,7 +595,7 @@ span{
     background: var(--bg-color);
     border-radius: 2rem;
     border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
+    margin: 2.5rem 0;
     resize: none;
 }
 
