@@ -513,7 +513,8 @@ span{
 }
 
 .testimonials-box img{
-    width: 15rem;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
@@ -555,7 +556,7 @@ span{
 }
 
 .testimonial-item p{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .contact{
