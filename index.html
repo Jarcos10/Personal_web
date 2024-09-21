@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Web</title>
+    <title>Julio Arcos</title>
     <link rel="stylesheet" href="/public/css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -115,40 +115,49 @@
     </section>
 
     <section class="services" id="services">
-        <h2 class="heading">Pasatiempos</h2>
-
-        <div class="services-container">
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Dibujar</h4>
-                    <p>Son de los pasatiempos que más disfruto, especialmente el dibujar animales y aprender diferentes técnicas</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Jugar fútbol</h4>
-                    <p>Jugar fútbol es otro de mis pasatiempos, disfruto mucho el correr y además poder jugar con amigos</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Hacer ejercicio</h4>
-                    <p>Me gusta ejercitarme y practicar calistenia ya que es un deporte que ayuda mucho a controlar tu mismo cuerpo y además fortalecerlo</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Aprender cosas nuevas</h4>
-                    <p>Me gusta aprender nuevas cosas, investigar cómo se crean otras, y observar nuevas técnicas, considero que cada aprendizaje puede ser útil en cualquier momento</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
+      <h2 class="heading">Pasatiempos</h2>
+  
+      <div class="services-container">
+  
+          <div class="service-box">
+              <div class="service-info">
+                  <h4>Dibujar</h4>
+                  <p>Son de los pasatiempos que más disfruto, especialmente el dibujar animales y aprender diferentes técnicas.</p>
+              </div>
+              <!-- Imagen que se mostrará al hacer hover -->
+              <img src="/public/images/dibujar.png" alt="Dibujar" class="service-image">
+          </div>
+  
+          <div class="service-box">
+              <div class="service-info">
+                  <h4>Jugar Videojuegos</h4>
+                  <p>Disfruto de jugar videojuegos, especialmente aquellos con historias interesantes y mecánicas desafiantes. Uno de mis videojuegos favoritos es Cuphead</p>
+              </div>
+              <!-- Imagen que se mostrará al hacer hover -->
+              <img src="/public/images/videojuegos.jpeg" alt="Jugar Videojuegos" class="service-image">
+          </div>
+  
+          <div class="service-box">
+              <div class="service-info">
+                  <h4>Hacer ejercicio</h4>
+                  <p>Me gusta ejercitarme y practicar calistenia ya que es un deporte que ayuda a controlar tu cuerpo y fortalecerlo. Además de ejercicios de fuerza</p>
+              </div>
+              <!-- Imagen que se mostrará al hacer hover -->
+              <img src="public/images/ejercicio.jpg" alt="Hacer ejercicio" class="service-image">
+          </div>
+  
+          <div class="service-box">
+              <div class="service-info">
+                  <h4>Armar Legos</h4>
+                  <p>Es una actividad que disfruto mucho, ya que me gusta construir cosas y observar como van tomando forma conforme avanzas en la construcción de estos</p>
+              </div>
+              <!-- Imagen que se mostrará al hacer hover -->
+              <img src="public/images/lego.jpg" alt="Aprender cosas nuevas" class="service-image">
+          </div>
+  
+      </div>
+  </section>
+  
 
     <section class="testimonials" id="testimonials">
         <div class="testimonials-box">
@@ -195,21 +204,24 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contactame</h2>
 
-      <form action="">
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="4e87bc83-7580-4b84-9286-11b8bcbeceb2">
+
         <div class="input-group">
 
           <div class="input-box">
-            <input type="text" placeholder="Nombre completo">
-            <input type="email" placeholder="Correo electrónico">
+            <input type="text" name="nombre" required placeholder="Nombre completo" >
+            <input type="email" name="correo" required placeholder="Correo electrónico">
           </div>
 
           <div class="input-box">
-            <input type="text" placeholder="Número de Teléfono">
+            <input type="text" name="numero" required placeholder="Número de Teléfono">
           </div>
         </div>
 
         <div class="input-group-2">
-          <textarea name="" id="" cols="38" rows="10" placeholder="Escriba un mensaje"></textarea>
+          <textarea name="mensaje" required cols="38" rows="10"  placeholder="Escriba un mensaje"></textarea>
           <input type="submit" value="Enviar Mensaje" class="btn">
         </div>
       </form>
@@ -251,7 +263,7 @@
       </p>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/public/js/script.js"></script>
   </body>
 </html>
